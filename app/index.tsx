@@ -1,8 +1,6 @@
 import { Link } from 'expo-router';  // ✅ Add this line
 import { View, Text } from 'react-native';
-import SuccessButton from '@/components/SuccessButton';
-
-
+import SuccessButton from '../components/SuccessButton';
 
 export default function Index() {
   return (
@@ -14,9 +12,16 @@ export default function Index() {
       }}
     >
       <Text>This is home page</Text>
-    <Link href="/about">
+      <Link href="/about">
         <Text>Go to About</Text>
       </Link>
+      <Link href="/product">
+        <Text>Go to Product</Text>
+      </Link>
+      <Link href="/blog/456">
+        <Text>Go to Blog</Text>
+      </Link>
+
       <SuccessButton title="Testing"/>
 
     </View>
