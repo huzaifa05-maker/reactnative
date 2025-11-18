@@ -1,14 +1,10 @@
-
-import { globalStyles } from '@/styles/globalstyles';
-import { View, Text, StyleSheet } from 'react-native';
-
+import Counter from '@/components/counter';
+import { View } from 'react-native';
 
 export default function Index() {
   return (
-    <View style={globalStyles.container} >    
-      <Text style={globalStyles.heading}>Hello World !!!</Text>
-
+    <View>
+      <Counter />
     </View>
   );
 }
-
